@@ -2,12 +2,12 @@ name: Test Project
 on: push
 jobs:
     test:
-        run-on: ubuntu-latest
+        runs-on: ubuntu-latest
         steps:
             - name: Get code
               uses: actions/chockout@v3
             - name: Install NodeJS
-              uses: actions/setup-node
+              uses: actions/setup-node@v3
               with:
                    node-version: 18
             - name: Install dependencies
